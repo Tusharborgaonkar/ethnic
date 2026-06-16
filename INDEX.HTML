@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SAREN - Bold &amp; Confident Fashion</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="custom-typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #e5e7eb; /* Light grey background from screenshot */
+    }
+  </style>
+<style data-purpose="layout-adjustments">
+    .container-custom {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .hero-gradient {
+      background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%);
+    }
+  </style>
+</head>
+<body class="text-neutral-900">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+<div class="container-custom py-4 flex items-center justify-between">
+<!-- Left: Navigation Links -->
+<nav class="flex items-center space-x-6 text-sm font-medium">
+<div class="group relative px-4 py-2 bg-white rounded-md shadow-sm flex items-center gap-4">
+<a class="hover:underline" href="#">Women +</a>
+<a class="hover:underline border-b-2 border-black" href="#">Shop All</a>
+<a class="hover:underline" href="#">Men +</a>
+<a class="hover:underline text-xs" href="#">New In</a>
+<a class="hover:underline text-xs" href="#">Sale</a>
+<a class="hover:underline text-xs" href="#">Outlet</a>
+</div>
+</nav>
+<!-- Center: Logo -->
+<div class="absolute left-1/2 -translate-x-1/2">
+<div class="bg-neutral-200 px-6 py-2 rounded shadow-sm">
+<span class="text-xl font-bold tracking-widest">SAREN</span>
+</div>
+</div>
+<!-- Right: Utility Icons -->
+<div class="flex items-center space-x-4">
+<button class="p-2 hover:bg-neutral-100 rounded-full">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="p-2 hover:bg-neutral-100 rounded-full">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="p-2 hover:bg-neutral-100 rounded-full">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="flex items-center space-x-2 bg-neutral-100 px-3 py-1.5 rounded-full border border-neutral-300">
+<span class="text-xs font-bold">BAG</span>
+<span class="bg-black text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">0</span>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="container-custom mt-4">
+<section class="relative h-[80vh] rounded-[2rem] overflow-hidden group" data-purpose="hero-carousel">
+<img alt="Hero Lifestyle" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuaB-kXMGSycrAMlLa7y60weW3QNa1_qN4bqRXW7F4UCmdBqOMvyUupTCbHzv5rhmK8F040kUpndJvLo1xhVTH5L_7DOR_A3TyQLc7wVtr301A4xbf8X_DI0fsG2Ocp5CI5EW5VKyvSSrdk2o-gUMgyjcVvD2w8zFqYLe4YrzFrjo-wfT6rhqNvMhCLCvZB3GSVaDkiWAsnfJ-OHdefYihS6aUZAd0-5q9PFRqfLuQ1-8xdYuqAxIDIyNNVJG4Bm90W8oRzzFBtAwl"/>
+<!-- Hero Content Overlay -->
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-12 text-white">
+<div class="max-w-xl">
+<h1 class="text-4xl font-bold mb-4 tracking-tight">BOLD &amp; CONFIDENT</h1>
+<p class="text-sm opacity-90 leading-relaxed max-w-md">
+            Make a statement with striking pieces designed to turn heads. Power dressing redefined for the modern trendsetter.
+          </p>
+</div>
+</div>
+<!-- Carousel Indicators -->
+<div class="absolute bottom-12 left-12 flex space-x-2">
+<span class="w-3 h-3 bg-white rounded-full"></span>
+<span class="w-3 h-3 bg-white/50 rounded-full"></span>
+<span class="w-3 h-3 bg-white/50 rounded-full"></span>
+</div>
+<!-- Carousel Navigation -->
+<div class="absolute bottom-12 right-12 flex space-x-4">
+<button class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center hover:bg-white transition-colors">
+<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center hover:bg-white transition-colors">
+<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</section>
+</main>
+<!-- END: HeroSection -->
+<!-- BEGIN: TrendingSection -->
+<section class="container-custom mt-20" data-purpose="trending-products">
+<div class="flex justify-between items-center mb-10">
+<h2 class="text-2xl font-bold uppercase tracking-widest">Trending Now</h2>
+<a class="flex items-center text-xs font-bold bg-white px-4 py-2 rounded-full border border-neutral-200" href="#">
+        SHOP ALL <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<article class="group relative" data-purpose="product-card">
+<div class="relative bg-[#f5f5f5] rounded-[1.5rem] overflow-hidden aspect-[3/4]">
+<img alt="Classic knit pullover" class="w-full h-full object-cover mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1GgOXsioRwzu1HJnoFWfwJvY2YT0IP5ZXRGr-aJP0HrFSunJRm6x6Mtv_nCWnaZcA3SmKApZre3tykvcF67-uWpjw4CGyhWQeZJJKK7iTJCb0LjH8G7rO8AqTG1l8Ni95tzcpIbEIhA9J0ICzpl8SAkloHiSQknIU9ez0G5SYPO1VOl-lIj8OjY_reRmUTcokZKUS7sE8Ds8PJ9IvEThMoeNdfZAxok09-iAmwSoGiDuAhHk9IAUHrPuoTsnpH1xgv9igV3m_TKBo"/>
+<button class="absolute top-4 right-4 p-2 bg-white/60 rounded-full hover:bg-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Classic cable knit white pullover</h3>
+<p class="text-sm font-bold">£59.00</p>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase tracking-wider">Man , Sweaters , Unisex , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#E5D3B3] border border-neutral-300"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFFFFF] border border-neutral-300"></span>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative" data-purpose="product-card">
+<div class="relative bg-[#f5f5f5] rounded-[1.5rem] overflow-hidden aspect-[3/4]">
+<img alt="Zip-up bomber" class="w-full h-full object-cover mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbW4ZB5rp-Hz4m5JaWiWCJGt7r7vtwb9nK0OrnoUOPEbMC8Hr0tuJb6Od5uCbvhHCdLPU9bpht-PBY0E_eGB68ArdbefbhGfYpGifi4Wz2oOVmZElBjI5BCvrsv02QmeluwsCXOW8BvuqtUnxcy3VP6PjEAQ-K-P8WajDs6cskw_NEf8ZbGVKmFEfVGYODXGR15dNr7o9g0DU8U06wLPRXJQikCHIytFSwqM2dE2UrHAg2GI0OfLoceVvqibhwvwW2N2_pC8kT3x4q"/>
+<button class="absolute top-4 right-4 p-2 bg-white/60 rounded-full hover:bg-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Zip-up casual yellow bomber</h3>
+<p class="text-sm font-bold">£299.00</p>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase tracking-wider">Jackets , Man</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#8B6B4E] border border-neutral-300"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFFF00] border border-neutral-300"></span>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative" data-purpose="product-card">
+<div class="relative bg-[#f5f5f5] rounded-[1.5rem] overflow-hidden aspect-[3/4]">
+<img alt="Soft touch jacket" class="w-full h-full object-cover mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpBYNJcu27VjxjJJCURcYLzXOF38zMzWF5ym5ljkAuc7SXTyhwm5WtqIdNgWS_XTL7Zm4Sjr86STT3nfRcL_t8Bru4LHQFYH-_hNjNV4jkWodt1bsyLwYlwpFv7EeEAmMcJHAub0dqrpax6O7LHAC95Wy6Nel9EQnFJ0p7IZYPiP0_u2XNA_bTRIcO-QOFkuCSfwG8z37Qjie5gxCdxnotGXibb-H9HT-OqlQQPE3CAxKmllISEfztssJucpdlP0B8U_cEN01X6aDn"/>
+<button class="absolute top-4 right-4 p-2 bg-white/60 rounded-full hover:bg-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Soft touch casual green jacket</h3>
+<p class="text-sm font-bold">£199.00</p>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase tracking-wider">Jackets , Man</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#5F9EA0] border border-neutral-300"></span>
+<span class="w-3 h-3 rounded-full bg-[#90EE90] border border-neutral-300"></span>
+</div>
+</div>
+</article>
+<!-- Product Card 4 (SALE) -->
+<article class="group relative" data-purpose="product-card">
+<div class="relative bg-[#f5f5f5] rounded-[1.5rem] overflow-hidden aspect-[3/4]">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded">SALE</span>
+<img alt="Relaxed shorts" class="w-full h-full object-cover mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjjCoIlZ38fFO5fb7NRPOEBU39ITkj3JfLKzlp3bt0dPvGirjRHTPE4m7aKhvUfukWx99hkFDStOOJAYHK6X9cnbDdY2yZ_g-utRUaOcHnNZD1n6uTqUxzHrzZGSfPlO1nlckDPB6hBgGhevxYEL6AFqOKyjDDrUerVCB1MLu5HgDHmxi1JmaT2JWCIFOw80YkGYrJcEZ0Vy3VG7t4o-pHZ6ORsrDXgkBwKBVTGFZx7ut5H_lSMKB0IWs2PVfXcddVUEYvkWP3P0hL"/>
+<button class="absolute top-4 right-4 p-2 bg-white/60 rounded-full hover:bg-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="mt-4 px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Relaxed fit summer orange shorts</h3>
+<div>
+<p class="text-[10px] text-neutral-400 line-through">£89.00</p>
+<p class="text-sm font-bold text-red-600">£69.00</p>
+</div>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase tracking-wider">Man , Shorts , Unisex , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#FFA07A] border border-neutral-300"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFB6C1] border border-neutral-300"></span>
+<span class="w-3 h-3 rounded-full bg-[#DDA0DD] border border-neutral-300"></span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- END: TrendingSection -->
+<!-- BEGIN: CollectionBanners -->
+<section class="container-custom mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Man Collection -->
+<div class="relative rounded-[2.5rem] overflow-hidden aspect-[4/3] group cursor-pointer" data-purpose="man-collection-banner">
+<img alt="Man Collection Banner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPGptsiml9a4DTdugZ7qdT6LvsVudxN47oFNJ6ewa5wDn2EPB68QJ0dT3pN-kEpZ3CeGcePu4L3TtosncjNXnBPHx2DDwJcCseQ8ON_dzDCMN_Sk-Cv92gTzcnKlrD4VBMQ7qW69k4dtxqXQQQzJzYfHDBFdzOZ9dHuHF3gJQEWjOVssfuf93m-aLGzxQB8dnZNqYXlEUyj_QMZ7ifbAjFUMtlnHxGaKc6m1auE1D71SeehFR5OUxrSu6aEWFsZTb6L8zK_bDqAPhY"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h2 class="text-3xl font-bold mb-6 tracking-wide">MAN COLLECTION</h2>
+<a class="inline-flex items-center bg-white text-black px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-neutral-100 transition-colors" href="#">
+<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          SHOP - MAN
+        </a>
+</div>
+</div>
+<!-- Woman Collection -->
+<div class="relative rounded-[2.5rem] overflow-hidden aspect-[4/3] group cursor-pointer" data-purpose="woman-collection-banner">
+<img alt="Woman Collection Banner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsAZ2MhxxJNMfLwCzu0Yf9vM3M5_Hel0d2z5I113F7ryI7sy7svx194ZkxFbUw8Wli3Ien-r_vXT9zJQ3nAjL8ZiVJUydcKAAH-1hPdKqBmPzFydp8Ws72FsGSMB9tdH3kmhNhmHTzH9DrDedgdmhqaHF99OYV5-R4tzpbhDFwotLmKabsNOan11avXxezTaev6E7sSGu6OTtDCAF4r_Y54kMzkTqOmPjtnU7kGHn7skRHHFK0LzFu916YW3gAKrNVaMXYiBrQyzSS"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h2 class="text-3xl font-bold mb-6 tracking-wide">WOMAN COLLECTION</h2>
+<a class="inline-flex items-center bg-white text-black px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-neutral-100 transition-colors" href="#">
+<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          SHOP - WOMAN
+        </a>
+</div>
+</div>
+</section>
+<!-- END: CollectionBanners -->
+<!-- BEGIN: TimelessSection -->
+<section class="container-custom py-24 text-center" data-purpose="timeless-essentials">
+<h2 class="text-2xl font-bold uppercase tracking-[0.2em] mb-4">Timeless Essentials</h2>
+<p class="text-neutral-600 text-sm mb-16">Wardrobe staples that never go out of style.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+<!-- Product 5 -->
+<article class="group" data-purpose="product-card">
+<div class="bg-white rounded-[1.5rem] overflow-hidden aspect-[3/4] mb-4">
+<img alt="Classic knit" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoWjz4yHQUNEXhcasoJSG4sX5qGeqLiIrKIR9ksomEiUunXHN78Kz-bpVXE38srZ03dPfiTcC-3tF7BCubI3yZy16qTQW0EAol0Sb5SugwCvs3bb69v-Ak7SyFTwbmR-FL1q3zWaaG7GRZQnbpZRvFblQFdPJTmEfm5Kg0pLqCwmkLJxXZ-wxN6c3NdBWoAV0pHZtM1fcoX-tPafrMah6cus5KB0NqOObgL_QCd6rcKPxSDEjKg9VcAm1Evhc09zjCz2KdKWCbmnbW"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Classic cable knit white pullover</h3>
+<p class="text-sm font-bold">£59.00</p>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase">Man , Sweaters , Unisex , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#E5D3B3] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFFFFF] border"></span>
+</div>
+</div>
+</article>
+<!-- Product 6 (SALE) -->
+<article class="group" data-purpose="product-card">
+<div class="relative bg-white rounded-[1.5rem] overflow-hidden aspect-[3/4] mb-4">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded">SALE</span>
+<img alt="High collar jacket" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApz7XjyrpYuvaBScBkJMsYxU0hCP69xWbA8z2pK6xtcnfO24_whhZ5vb1EVyhfQD8pz3IJ3YKJw2kfLvIY4C9TuoaIuuzqlEk9q6yVUYQBuzk-l3uclAG4I68AWlyuLwnQ_VjdxRegdr4u3wvdCgpZzsbX2_x2lEczrSiKE8ubbqXxcAPxK9pLjNNTIHeKYAOFLxBIArXasmxgGcc34GKpCCq-fcJjXFRw_58Pou99FEAT28SrcEdbdQk2FLClUj44Qk9h0VfIM-Gr"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">High collar zippered white jacket</h3>
+<div>
+<p class="text-[10px] text-neutral-400 line-through">£99.00</p>
+<p class="text-sm font-bold text-red-600">£79.00</p>
+</div>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase">Jackets , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#FFFFFF] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#D1E231] border"></span>
+</div>
+</div>
+</article>
+<!-- Product 7 (SALE) -->
+<article class="group" data-purpose="product-card">
+<div class="relative bg-white rounded-[1.5rem] overflow-hidden aspect-[3/4] mb-4">
+<span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded">SALE</span>
+<img alt="Relaxed shorts" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_UkeorcnkR0-6ROcaJ3RlDvCdmclTAWbe2P5a-_l0VYQnf_lguUIxOB0kaFmxhOug4gPRnK1Cnggnk_ilTRHlaNRmLx4a_uDPfNKEJZxPmevVvRzzJWZQ2TkFGnlsMDP7sH5SDUjv30CSBjJB64m3vRAeNBaYA1HmM_-aW9kspCCdn4VYuMrggqWcg1RPZ01qSTCHTwTf__9ADwZpQAulqnWnC_SsPNBrqP4FpmOJgctRDG5i6T4aNxp03FDgNtHhgMVomP-0JQ2"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Relaxed fit summer orange shorts</h3>
+<div>
+<p class="text-[10px] text-neutral-400 line-through">£89.00</p>
+<p class="text-sm font-bold text-red-600">£69.00</p>
+</div>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase">Man , Shorts , Unisex , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#FFA07A] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFFF00] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#DDA0DD] border"></span>
+</div>
+</div>
+</article>
+<!-- Product 8 -->
+<article class="group" data-purpose="product-card">
+<div class="bg-white rounded-[1.5rem] overflow-hidden aspect-[3/4] mb-4">
+<img alt="Short sleeve shirt" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9_lzizrYcILXEuAH9tJpDzm9tEZd022vv9QA0KvoznMr8-B2X_vabauBq7QxHbwkyOnSFnvDQ2rlCLlSj_USUty9i4Lk5zWYf7rM3y2u-6rnDCNU5tt96u9b4NcN4nm8AAHhb1EGaV61TEX2s-ICXQjIHq9HeqsGsQdELV6PkfGT1oVCDUDGmRiCdjFghaMpRofoa9G_uWLTOt1spxPU6zwaELsD3545SFwR6G8FEXCCJdopDtg6Rjy5F690GPT3laTo6K20oK4Pg"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start">
+<h3 class="text-sm font-semibold max-w-[180px]">Classic short sleeve pink t-shirt</h3>
+<p class="text-sm font-bold">£29.00</p>
+</div>
+<p class="text-[10px] text-neutral-500 mt-1 uppercase">Man , T-Shirts , Unisex , Woman</p>
+<div class="flex space-x-1 mt-3">
+<span class="w-3 h-3 rounded-full bg-[#D2B48C] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#90EE90] border"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFB6C1] border"></span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- END: TimelessSection -->
+<!-- Footer Padding -->
+<footer class="h-20 bg-neutral-100 border-t border-neutral-200"></footer>
+</body></html>

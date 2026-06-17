@@ -9,11 +9,11 @@ $trending = [
 @endphp
 
 {{-- ── TRENDING NOW ── --}}
-<section style="padding-top:40px; padding-bottom:32px;" data-purpose="trending-products">
+<section class="trending-section" style="padding-top:40px; padding-bottom:32px;" data-purpose="trending-products">
     <div class="container-custom">
-        <div class="flex flex-row justify-between items-center mb-6 md:mb-10">
-            <h2 class="text-xl md:text-2xl font-medium uppercase text-left text-gray-900 tracking-wide">TRENDING NOW</h2>
-            <a class="flex items-center text-xs font-semibold text-gray-700 bg-white px-4 py-2 rounded-full hover:bg-neutral-50 transition-colors gap-2 flex-shrink-0 shadow-sm" href="{{ route('product.details') }}">
+        <div class="trending-header flex flex-row justify-between items-center mb-6 md:mb-10">
+            <h2 class="trending-title text-xl md:text-2xl font-medium uppercase text-left text-gray-900 tracking-wide">TRENDING NOW</h2>
+            <a class="trending-shop-btn flex items-center text-xs font-semibold text-gray-700 bg-white px-4 py-2 rounded-full hover:bg-neutral-50 transition-colors gap-2 flex-shrink-0 shadow-sm" href="{{ route('product.details') }}">
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                 SHOP ALL
             </a>
@@ -63,6 +63,39 @@ $trending = [
     .serif { font-family:'Cormorant Garamond',serif; }
     @media (max-width:640px) {
         .container-custom { padding-left:1rem; padding-right:1rem; }
+        .trending-section {
+            padding-top: 3.2rem !important;
+            padding-bottom: 1.75rem !important;
+        }
+
+        .trending-header {
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: .85rem !important;
+            margin-bottom: 1.65rem !important;
+            text-align: center;
+        }
+
+        .trending-title {
+            font-size: 1.4rem !important;
+            line-height: 1 !important;
+            font-weight: 600 !important;
+            text-align: center !important;
+            letter-spacing: 0 !important;
+        }
+
+        .trending-shop-btn {
+            min-width: 6.9rem;
+            height: 2rem;
+            justify-content: center;
+            padding: 0 .95rem !important;
+            border-radius: 999px !important;
+            font-size: .75rem !important;
+            font-weight: 500 !important;
+            color: #2f2f2f !important;
+            gap: .45rem !important;
+            box-shadow: none !important;
+        }
     }
 </style>
-

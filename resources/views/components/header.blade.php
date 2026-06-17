@@ -5,14 +5,19 @@
     <div id="headerInner" class="flex items-center justify-between w-full max-w-full mx-auto transition-all duration-[700ms] ease-out-luxury gap-2 overflow-visible relative">
 
         {{-- Left Navigation / Hamburger --}}
-        <div class="flex items-center z-20 flex-1">
+        <div class="flex items-center z-20 flex-1 gap-2">
             {{-- Hamburger for Mobile --}}
             <button @click="mobileOpen = !mobileOpen" class="md:hidden flex items-center justify-center w-8 h-8 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/20 hover:scale-105 transition-transform duration-300 icon-btn">
                 <svg class="w-4 h-4 transition-transform duration-300" :class="mobileOpen ? 'rotate-45' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                 </svg>
             </button>
-            
+
+            {{-- Logo for Mobile only --}}
+            <a href="/" class="md:hidden block bg-stone-100/90 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-lg border border-stone-200/50">
+                <span class="text-sm font-bold tracking-widest text-gray-900" style="font-family:'Cormorant Garamond',serif;">ETHNIC</span>
+            </a>
+
             {{-- Nav Pill for Desktop --}}
             <div class="hidden md:flex items-center bg-white/95 backdrop-blur-sm px-6 py-2.5 rounded-[1rem] shadow-lg border border-white/20 nav-pill">
                 <ul class="flex items-center gap-5 text-[13px] font-medium text-gray-800">
@@ -27,9 +32,10 @@
         </div>
 
         {{-- Center Logo --}}
-        <div class="absolute left-1/2 -translate-x-1/2 z-10 logo-pill">
-            <a href="/" class="block bg-stone-100/90 backdrop-blur-md px-4 md:px-8 py-2 md:py-2.5 rounded-2xl shadow-lg border border-stone-200/50 hover:bg-stone-100 transition-colors duration-300">
-                <span class="text-base md:text-xl font-bold tracking-widest md:tracking-[0.3em] text-gray-900" style="font-family:'Cormorant Garamond',serif;">SAREN</span>
+        {{-- Desktop: absolute centered; Mobile: hidden (logo moves into left flex) --}}
+        <div class="hidden md:block absolute left-1/2 -translate-x-1/2 z-10 logo-pill">
+            <a href="/" class="block bg-stone-100/90 backdrop-blur-md px-8 py-2.5 rounded-2xl shadow-lg border border-stone-200/50 hover:bg-stone-100 transition-colors duration-300">
+                <span class="text-xl font-bold tracking-[0.3em] text-gray-900" style="font-family:'Cormorant Garamond',serif;">ETHNIC</span>
             </a>
         </div>
 
